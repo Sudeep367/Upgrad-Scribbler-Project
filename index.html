@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+</head>
+
+<body>
+    <!-- TODO: Include all your code for the header and home page here -->
+    <div id="main-container-div">
+        <div class="header">
+            <a id="pageTitle" class="logo">ScriBBler</a>
+            <p class="middleText">Explore Imagine Create</p>
+            <div class="header-right">
+                <a id="signin" href="#contact" onclick="signin();">Sign In</a>
+                <span></span>
+                <a id="signup" href="#home" onclick="signup();">Sign Up</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="postButtons" id="postbutton">
+        <a href="html/bloglist.html"><button class="postbutton">All Posts</button></a> &nbsp;
+        <button class="postbutton" onclick="addPost();">Create Post</button>
+    </div>
+
+    <div>
+        <div id="Modal1" class="modal">
+            <div class="modal-content">
+                <span id="close1" class="close">&times;</span>
+                <h2 class="title1">Welcome Back!</h2>
+                <hr size="4">
+                <form action="#" method="post">
+                    <div>
+                        <label><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="pass" required>
+
+                        <button id="submit2">Sign In</button>
+                        <br>
+                        <b><span><p align="center">Not a member?&nbsp;<a id="memberoption" onclick="signupmodalMember();">Sign Up</a></span></p></b>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+
+
+        <div id="Modal2" class="modal">
+            <div class="modal-content">
+                <span id="close2" class="close">&times;</span>
+                <h2 class="title1">Get Started</h2>
+                <hr size="4">
+                <form action="#" method="post">
+                    <div>
+                        <label><b>Full Name</b></label>
+                        <input type="text" placeholder="Enter Full Name" name="fname" required>
+
+                        <label><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="pass" required>
+
+                        <label><b>Confirm Password</b></label>
+                        <input type="password" placeholder="Confirm Password" name="cpass" required>
+                        <button id="submit">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div id="postModal" class="modal">
+            <div class="modal-content1">
+                <span id="close3" class="close">&times;</span>
+                <h2 class="title1">Pen Your Post</h2>
+                <form action="#" method="post">
+                    <div id="postmodalfield">
+                        <label><b>Title</b></label><br>
+                        <input type="text" name="email" width="30%">
+                        <br>
+                        <label><b>Content</b></label><br>
+                        <textarea name="content"></textarea>
+                        <br><br>
+                        <center><button id="create">Create</button></center>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js\index.js"></script>
+
+</body>
+
+</html>

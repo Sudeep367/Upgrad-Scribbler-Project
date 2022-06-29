@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Candal|Lora" rel="stylesheet">
+    <link rel="stylesheet" href="../css/post.css">
+    <link rel="stylesheet" type="text/css" href="../css/post.css">
+
+</head>
+
+<body onload="Function()">
+    <!-- TODO: Include all your code for the header and home page here -->
+
+    <div id="main-container-div">
+        <div class="header">
+            <a id="pageTitle" class="logo">ScriBBler</a>
+            <p class="middleText">Explore Imagine Create</p>
+            <div class="header-right">
+                <a id="signin" href="#contact" onclick="signin();">Sign In</a>
+                <span></span>
+                <a id="signup" href="#home" onclick="signup();">Sign Up</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="Modal1" class="modal">
+            <div class="modal-content">
+                <span id="close1" class="close">&times;</span>
+                <h2 class="title1">Welcome Back!</h2>
+                <hr size="4">
+                <form action="#" method="post">
+                    <div>
+                        <label><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="pass" required>
+
+                        <button id="submit2">Sign In</button>
+                        <br>
+                        <b><span><p align="center">Not a member?&nbsp;<a id="memberoption" onclick="signupmodalMember();">Sign Up</a></span></p></b>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+
+
+        <div id="Modal2" class="modal">
+            <div class="modal-content">
+                <span id="close2" class="close">&times;</span>
+                <h2 class="title1">Get Started</h2>
+                <hr size="4">
+                <form action="#" method="post">
+                    <div>
+                        <label><b>Full Name</b></label>
+                        <input type="text" placeholder="Enter Full Name" name="fname" required>
+
+                        <label><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="pass" required>
+
+                        <label><b>Confirm Password</b></label>
+                        <input type="password" placeholder="Confirm Password" name="cpass" required>
+                        <button id="submit">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="blogContent">
+        <div id="Title" class="title">
+            <h id="Title">What is linting and how can it save you time?</h>
+        </div>
+
+        <div class="user">
+
+            <button id="edit" class="button" onclick="editContent()" value="Edit">Edit <i class="fa fa-edit"></i></button>
+            <button id="save" class="button" onclick="saveContent()" value="save">Save <i class="fa fa-save"></i></button>
+
+            <p id=name>Colby Fayock</p>
+        </div>
+
+        <div class="para">
+            <p id="paraText" contenteditable="false">
+                One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.
+            </p>
+        </div>
+    </div>
+    <div class="likeBlogButton">
+        <button id="likeBlog" onclick="postLiked()"><i class="fa fa-thumbs-up"> Like</i></button></div>
+    <div> <span id="commentCount">Be the first one to like this!</span>
+    </div>
+    <div> <input type="textarea" placeholder="Leave a Comment..." id="userComments" value=""></div>
+    <button id="addList" onclick="addComments(userComments)">Comment</button>
+    <h4>All Comments</h4>
+    <div id="addEventNames" class="commentbox"></div>
+    <script src="../js/post.js"></script>
+</body>
+
+
+</html>
